@@ -23,9 +23,11 @@ transformations = transforms.Compose([
     transforms.Scale(256),
     transforms.CenterCrop(224),
     transforms.ToTensor()])
-dset_train = dataset_processing.DatasetProcessing(DATA_PATH, TRAIN_DATA, TRAIN_IMG_FILE, TRAIN_LABEL_FILE, transformations)
+dset_train = dataset_processing.DatasetProcessing(
+    DATA_PATH, TRAIN_DATA, TRAIN_IMG_FILE, TRAIN_LABEL_FILE, transformations)
 
-dset_test = dataset_processing.DatasetProcessing(DATA_PATH, TEST_DATA, TEST_IMG_FILE, TEST_LABEL_FILE, transformations)
+dset_test = dataset_processing.DatasetProcessing(
+    DATA_PATH, TEST_DATA, TEST_IMG_FILE, TEST_LABEL_FILE, transformations)
 
 train_loader = DataLoader(dset_train,
                           batch_size=batch_size,

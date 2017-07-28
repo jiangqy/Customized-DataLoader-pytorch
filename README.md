@@ -21,7 +21,7 @@ Customized DataLoader for multi label classification-[pytorch implementation]
 |data/train_label.txt|label list for training image|
 |data/test_label.txt| label list for testing image|
 
-### 3. Runing example:
+### 3. Running example:
 requirements:
 ```python
 torch
