@@ -6,10 +6,13 @@ Customized DataLoader for multi label classification-[pytorch implementation]
 
 ### Dataset arrangement:
 Details of file constructure:
-- data/<td></td>
+- data/
 - data/train_img/*.jpg
 - data/train_img.txt
 - data/train_label.txt
 - data/test_img/*.jpg
 - data/test_img.txt
 - data/test_label.txt
+Description:
+| file | description|
+|---|---|
