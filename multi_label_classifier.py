@@ -91,7 +91,8 @@ for epoch in range(epochs):
 
         # total += train_labels.size(0)
         total_training_loss += loss.data[0]
-        print('Training Phase: Epoch: [%2d][%2d/%2d]\tIteration Loss: %.3f' % (iter, epoch, epochs, loss.data[0] / train_labels.size(0)))
+        print('Training Phase: Epoch: [%2d][%2d/%2d]\tIteration Loss: %.3f' %
+              (iter, epoch, epochs, loss.data[0] / train_labels.size(0)))
     ### testing phase
     for iter, testdata in enumerate(test_loader, 0):
         test_inputs, test_labels = testdata
@@ -101,4 +102,5 @@ for epoch in range(epochs):
 
         test_outputs = model(test_inputs)
         test_loss = criterion(test_outputs, test_labels)
-        print('Testing Phase: Epoch: [%2d][%2d/%2d]\tIteration Loss: %.3f' % (iter, epoch, epochs, test_loss.data[0] / test_labels.size(0)))
+        print('Testing Phase: Epoch: [%2d][%2d/%2d]\tIteration Loss: %.3f' %
+              (iter, epoch, epochs, test_loss.data[0] / test_labels.size(0)))

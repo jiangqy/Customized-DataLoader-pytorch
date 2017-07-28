@@ -1,11 +1,7 @@
 ---
 Customized DataLoader for multi label classification-[pytorch implementation]
 ---
-### Introduction
----
-
-### Dataset arrangement:
-#### 1. Details of file fold:
+### 1. Details of file fold:
 - data/
 - data/train_img/*.jpg
 - data/train_img.txt
@@ -14,7 +10,7 @@ Customized DataLoader for multi label classification-[pytorch implementation]
 - data/test_img.txt
 - data/test_label.txt
 
-#### 2. File description:
+### 2. File description:
 
 | file | description|
 |---|---|
@@ -25,7 +21,7 @@ Customized DataLoader for multi label classification-[pytorch implementation]
 |data/train_label.txt|label list for training image|
 |data/test_label.txt| label list for testing image|
 
-#### 3. Runing example:
+### 3. Runing example:
 requirements:
 ```python
 torch
@@ -50,6 +46,6 @@ Training Phase: Epoch: [ 9][ 0/ 3]	Iteration Loss: 0.377
 Training Phase: Epoch: [10][ 0/ 3]	Iteration Loss: 0.329
 Training Phase: Epoch: [11][ 0/ 3]	Iteration Loss: 0.324
 ```
-#### 4. Dataset:
+### 4. Dataset:
 We use the following dataset for our example:
 [link](http://lamda.nju.edu.cn/data_MIMLimage.ashx).
