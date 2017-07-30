@@ -17,7 +17,7 @@ class DatasetProcessing(Dataset):
         label_filepath = os.path.join(data_path, label_filename)
         labels = np.loadtxt(label_filepath, dtype=np.int64)
         self.label = labels
-        fp.close()
+
     def __getitem__(self, index):
         img = Image.open(os.path.join(self.img_path, self.img_filename[index]))
         img = img.convert('RGB')
